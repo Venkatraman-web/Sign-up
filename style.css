@@ -1,0 +1,203 @@
+:root{
+  --p-color:white;
+  --s-color:darkmagenta;
+  --t-color:darkviolet;
+  --m-color:rgb(58, 56, 56);
+}
+body{
+    background: linear-gradient(1deg, darkmagenta, darkviolet, purple);
+    /* background-repeat: no-repeat; */
+    height: 800px;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      bottom: -25px;
+   }
+   .sign-up{
+       background-color: var(--p-color);
+       height: 275px;
+       width: 250px;
+       margin: auto;
+       border-radius: 10px;
+       place-items: center;
+      position: static;
+      box-shadow: -3px 5px 10px  black;
+   }
+  .heading-4{
+    font-family: 'Raleway', sans-serif;
+  }
+  .h4{
+      text-align: center;
+     
+  }
+  #name{
+    height: 17px;
+width: 150px;
+border: 2px solid var(--p-color);
+box-shadow: 1px -0px 100px rgb(2, 1, 1);
+font-size: 7px;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+position: relative;
+top: -10px;
+background-image: url('Img/images.png');
+position: left;
+padding-left: 15px;
+background-size: 12px;
+background-repeat: no-repeat;
+border-radius: 30px;
+right: -10px;
+margin: 5px 0px;
+background-position: 2px;
+  }
+#email{
+height: 17px;
+width: 150px;
+border: 2px solid var(--p-color);
+box-shadow: 1px -0px 100px var(--m-color);
+font-size: 7px;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+position: relative;
+top: -5px;
+background-image: url('Img/images2.jpg');
+position: left;
+padding-left: 17px;
+background-size: 12px;
+background-repeat: no-repeat;
+border-radius: 30px;
+right: -10px;
+margin: 5px 0px;
+background-position: 2px;
+}
+#pass{
+    height: 17px;
+width: 150px;
+
+border: 2px solid var(--p-color);
+box-shadow: 1px -0px 100px var(--m-color);
+font-size: 7px;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+position: relative;
+top: -5px;
+background-image: url('Img/image3.png');
+position: left;
+padding-left: 17px;
+background-size: 12px;
+background-repeat: no-repeat;
+border-radius: 30px;
+right: -10px;
+margin: 5px 0px;
+background-position: 2px;
+}
+#confirm{
+height: 17px;
+width: 150px;
+border: 2px solid var(--p-color);
+box-shadow: 1px -0px 100px var(--m-color);
+font-size: 7px;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+position: relative;
+top: -5px;
+background-image: url('Img/image3.png');
+position: left;
+padding-left: 17px;
+background-size: 12px;
+background-repeat: no-repeat;
+border-radius: 30px;
+right: -10px;
+margin: 5px 0px;
+background-position: 2px;
+}
+.span{
+    font-size: 7px;
+    /* position: relative;
+    top: -1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+
+#check{
+/* I might need to edit it afterwords */ 
+
+
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  margin: 5px 0px;
+}
+.text{
+  color: var(--s-color);
+  font-size: 7px;
+    /* position: relative;
+    top: -1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+.text:hover{
+  text-decoration-line: underline;
+}
+
+.button{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn{
+background: linear-gradient(var(--t-color), purple);
+color: var(--p-color);
+height: 23px;
+border: none;
+font-size: 8px;
+font-family: 'Raleway', sans-serif;
+cursor:pointer;
+border-radius: 23px;
+}
+.btn:hover{
+  text-decoration-line: underline;
+}
+.confirmpassword{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forms{
+    box-sizing: border-box;
+}
+ ::selection{
+   background-color: gray;
+  color: var(--p-color); 
+} 
