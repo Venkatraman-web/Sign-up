@@ -20,13 +20,19 @@ if(!$conn){
 print("");
 }
 
-$sql = "INSERT INTO `user` (`Name`, `Email`, `Password`, `Confirm`) VALUES ('$name', '$email', '$pass', '$confirm')";
-$result = mysqli_query($conn, $sql);
-
-if($result){ 
-   print('<script>alert("You have successfully registered ")</script>');
+$checkUserQuery = "SELECT * FROM `user` WHERE `Name` = '$name'"; 
+$checkemailQuery = "SELECT * FROM `user` WHERE `Email` = '$email'";
+$resultCheckUser = mysqli_query($conn, $checkUserQuery);
+$resultemailUser = mysqli_query($conn, $checkemailQuery);
+// print($resultCheckUser);
+$numberOfUsers = mysqli_num_rows($resultCheckUser);
+$numberOfEmails = mysqli_num_rows($resultemailUser);
+if($numberOfUsers == 0 && $numberOfEmails == 0){
+   $sql = "INSERT INTO `user` (`Name`, `Email`, `Password`, `Confirm`) VALUES ('$name', '$email', '$pass', '$confirm')";
+  $result = mysqli_query($conn, $sql);
+  print('Sign Up Successful');
 }else{
-    print("The record has not been inserted successfully because of ". mysqli_error($conn));
+   print('Sign Up not successful');
 }
 
 
