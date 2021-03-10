@@ -27,7 +27,7 @@ $resultemailUser = mysqli_query($conn, $checkemailQuery);
 // print($resultCheckUser);
 $numberOfUsers = mysqli_num_rows($resultCheckUser);
 $numberOfEmails = mysqli_num_rows($resultemailUser);
-if($numberOfUsers == 0 && $numberOfEmails == 0){
+if($numberOfUsers == 0 || $numberOfEmails == 0){
    $sql = "INSERT INTO `user` (`Name`, `Email`, `Password`, `Confirm`) VALUES ('$name', '$email', '$pass', '$confirm')";
   $result = mysqli_query($conn, $sql);
   print('Sign Up Successful');
