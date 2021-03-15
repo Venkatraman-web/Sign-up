@@ -19,7 +19,9 @@ if(!$conn){
 }else{
 print("");
 }
-
+// if(empty($name || $email || $pass || $confirm )){
+//    print('Fill the imformations');
+// }
 $checkUserQuery = "SELECT * FROM `user` WHERE `Name` = '$name'"; 
 $checkemailQuery = "SELECT * FROM `user` WHERE `Email` = '$email'";
 $resultCheckUser = mysqli_query($conn, $checkUserQuery);
@@ -27,7 +29,7 @@ $resultemailUser = mysqli_query($conn, $checkemailQuery);
 // print($resultCheckUser);
 $numberOfUsers = mysqli_num_rows($resultCheckUser);
 $numberOfEmails = mysqli_num_rows($resultemailUser);
-if($numberOfUsers == 0 || $numberOfEmails == 0){
+if($numberOfUsers == 0 && $numberOfEmails == 0){
    $sql = "INSERT INTO `user` (`Name`, `Email`, `Password`, `Confirm`) VALUES ('$name', '$email', '$pass', '$confirm')";
   $result = mysqli_query($conn, $sql);
   print('Sign Up Successful');
