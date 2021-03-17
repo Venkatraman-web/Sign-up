@@ -14,6 +14,7 @@
 <link rel='icon' href='Sign-up.png' type='image/x-icon'/ >  
     <title>Sign-up page</title>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <div class="sign-up">
@@ -21,7 +22,7 @@
       <h4 class="heading-4">Sign Up</h1>    
    </div>
    <div id="forms">
-       <form action="Sign-upsuccess.php" method="POST">
+       <form onsubmit="return validate()" action="Sign-upsuccess.php" method="POST">
        <div class="name">
            <input type="text" name="Name" id="name" placeholder="Name">
        </div>
@@ -43,6 +44,10 @@
        </form>
    </div>
     </div>
-
+<script src="Sign-up.js">
+    
+</script>
+ 
+    
 </body>
 </html>
